@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visa on Arrival</title>
+
+    <!--favicon-->
+    <link rel="shortcut icon" href="/images/tribal.png" type="image/x-icon" />
+
+    <!--Bootstrap library-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/visa-style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-sm fixed-top">
+        <div class="container-fluid">
+          <a style="font-weight: bolder; font-family: Verdana, Geneva, Tahoma, sans-serif;" class="navbar-brand" href="#">TRIBAL GATEWAY</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto ms-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <!--
+              <li class="nav-item">
+                <a class="nav-link" href="#">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              -->
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/login3.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/register3.html">Signup</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container-fluid">
+      <div style="height: 350px; padding: 0;" class="px-4 pt-5 my-5 text-center border-bottom" id="voa-image">
+        <h1 class="text-center" style="text-align: center; margin-top: 228px; margin-left: 0px; padding-right: 0px;
+          background-color: rgba(0, 0, 0, 0.583); border-width: 5px; width: 500px;
+          border-radius: 50px; border-color: rgb(255, 157, 0); font-family: Tahoma; font-weight: bolder;
+          border-style: double; font-size: 50px;">VOA FORM</h1>
+      </div>
+     
+        <div class="col-lg-10 mx-auto voa-text-box text-center">
+          <p class="lead mb-4 fw-bold text-white">
+            <span class="intro-text">Hello from Nigeria! <br> So excited that you will be visiting Nigeria 
+              soon! <br> Our goal is to make your journey as smooth as possible.</span>
+          </p>
+    
+
+
+    <div id="holder" class="container-fluid my-5">
+      <div id="mydiv" class="row">
+        <div class="col-md-7 visa-form rounded">
+          <p class="lead mb-4 text-center text-white">
+            In order to process your application to receive your Fast Track Visa
+            On Arrival (VOA), we need the following information.
+          </p>
+          <form>
+            <div class="row g-3">
+              <div class="col-sm-7">
+                <div class="input-group mb-3">
+                  <span class="input-group-text bg-dark text-wrap" for="name">
+                    Name
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="col-sm-5">
+                <div class="input-group mb-3">
+                  <span class="input-group-text bg-dark text-wrap">
+                    Phone#
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="phone"
+                    name="phone"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="input-group mb-3">
+                  <span class="input-group-text bg-dark text-wrap">
+                    Email
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="input-group mb-3">
+                  <span class="input-group-text bg-dark text-wrap">
+                    Date of Arrival
+                  </span>
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="arrival-date"
+                    name="arrival-date"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="col-sm-5">
+                <div class="input-group mb-3">
+                  <span class="input-group-text bg-dark text-wrap">
+                    Time of Arrival
+                  </span>
+                  <input
+                    type="time"
+                    class="form-control"
+                    id="arrival-time"
+                    name="arrival-time"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="col-sm-7">
+                <div class="input-group mb-3">
+                  <span class="input-group-text bg-dark text-wrap">
+                    Airline
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="airline"
+                    name="airline"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="input-group mb-3">
+                  <span class="input-group-text bg-dark text-wrap">
+                    Arrival Airport
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="airline"
+                    name="airline"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="input-group mb-3">
+                  <span class="input-group-text bg-dark text-wrap">
+                    Date of Departure
+                  </span>
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="departure-date"
+                    name="departure-date"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="col-sm-7">
+                <div class="input-group mb-3">
+                  <span class="input-group-text bg-dark text-wrap">
+                    Are others traveling with you?
+                  </span>
+                  <input
+                    type="checkbox"
+                    class="btn-check"
+                    name="others-traveling"
+                    id="others-no"
+                    value="no"
+                    
+                  />
+                  <label class="btn btn-dark" for="others-no">No</label>
+                  <input
+                    type="checkbox"
+                    class="btn-check"
+                    name="others-traveling"
+                    id="others-yes"
+                    value="yes"
+                    checked
+                  />
+                  <label class="btn btn-dark" for="others-yes">Yes</label>
+                </div>
+              </div>
+
+              <div class="col-sm-5" id="others-number">
+                <div class="input-group mb-3">
+                  <span class="input-group-text bg-dark text-wrap">
+                    How many?
+                  </span>
+                  <input
+                    type="number"
+                    class="form-control"
+                    placeholder="0"
+                    min="1"
+                    max="99"
+                    required
+                  />
+                </div>
+              </div>
+
+              <hr class="my-4" />
+
+              <h5 class="mb-3">
+                Your VOA includes Airport Arrival and Departure Escort.<br> You will
+                be assisted and escorted for the entire process.
+              </h5>
+
+              <h6 class="mb-3">
+                Will someone be in Nigeria to greet you at the airport?<br> 
+                If yes, then please answer below.
+              </h6>
+
+              <div class="col-sm-6">
+                <div class="input-group mb-3">
+                  <span
+                    class="input-group-text bg-dark text-wrap"
+                    for="relative-name"
+                  >
+                    Relative Name
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="relative-name"
+                    name="relative-name"
+                  />
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="input-group mb-3">
+                  <span
+                    class="input-group-text bg-dark text-wrap"
+                    for="relative-phone"
+                  >
+                    Relative Phone#
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="relative-phone"
+                    name="relative-phone"
+                  />
+                </div>
+              </div>
+
+              <h6 class="mb-3">Emergency Contact in Home Country</h6>
+
+              <div class="col-sm-6">
+                <div class="input-group mb-3">
+                  <span
+                    class="input-group-text bg-dark text-wrap"
+                    for="emergency-name"
+                  >
+                    Name
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="emergency-name"
+                    name="emergency-name"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="input-group mb-3">
+                  <span
+                    class="input-group-text bg-dark text-wrap"
+                    for="emergency-phone"
+                  >
+                    Phone#
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="emergency-phone"
+                    name="emergency-phone"
+                  />
+                </div>
+              </div>
+
+              <hr class="my-4" />
+
+              <h5 class="mb-3">Transportation</h5>
+
+              <h6 class="mb-3">
+                Please indicate if you will need transportation on the day of
+                your Arrival and Departure
+              </h6>
+
+              <div class="form-check form-switch col-sm-12">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  role="switch"
+                  id="airport-house"
+                  value="60"
+                />
+                <label class="form-check-label" for="airport-house">
+                  I will need transportation from the airport to my housing
+                  accommodations on the day of my Arrival. ($60)
+                </label>
+              </div>
+
+              <div class="form-check form-switch col-sm-12">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  role="switch"
+                  id="house-airport"
+                  value="60"
+                />
+                <label class="form-check-label" for="house-airport">
+                  I will need transportation from my housing accommodation to
+                  the airport of the day of my Departure. ($60)
+                </label>
+              </div>
+
+              <div class="form-check form-switch col-sm-12">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  role="switch"
+                  id="relative-airport"
+                  value="100"
+                />
+                <label class="form-check-label" for="relative-airport">
+                  For my arrival, I will need transportation for my Relative to
+                  be picked up and brought to the airport to greet me, and then
+                  take us both to our accommodation from the airport ($100)
+                </label>
+              </div>
+
+              <div class="form-check form-switch col-sm-12">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  role="switch"
+                  id="relative-house"
+                  value="60"
+                />
+                <label class="form-check-label" for="relative-house">
+                  I will also need this for my Departure, to have my My Relative
+                  dropped off, after seeing me off and leaving the airport.
+                  ($100).
+                </label>
+              </div>
+
+              <div class="col-sm-12">
+                <button class="w-25 btn btn-danger" type="submit">
+                  Submit
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-md-5 text-box">
+          <div id="voa-process" class="row">
+            <h1 class="text-warning text-center display-5 fw-bold lh-1 mb-3">
+              VOA Process
+            </h1>
+            <p class="lead text-center text-white">
+              Once payment is received you will receive your receipt with your
+              client number. You will need to use your client number to upload
+              and email the following documents in order to process your VOA
+              Approval Letter.
+            </p>
+            <ol class="list-group list-group-numbered">
+              <li class="list-group-item">Copy of Passport Data Page</li>
+              <li class="list-group-item">Copy of your flight itinerary</li>
+              <li class="list-group-item">
+                Passport Photo (headshot of you with white background)
+              </li>
+            </ol>
+            <p class="lead text-center text-white">
+              Once you've been approved, you'll receive a notification of your
+              approval. However, you will receive your official approval VOA
+              letter from the Nigerian Embassy within 5 days of your flight.
+              This is done in case there are any changes to your flight, since
+              your letter will have your identifying flight information.
+            </p>
+          </div>
+
+          <div class="row" id="important-box">
+            <h1 class="text-warning text-center display-5 fw-bold lh-1 mb-3">
+              Important!
+            </h1>
+            <p class="lead text-center text-white">
+              You'll need this letter to board your plane.
+            </p>
+            <p class="lead text-center text-white">
+              Once you arrive in Lagos, Nigeria your Immigration Officer will
+              greet you and then escort you to the Immigration Office to receive
+              your Visa and Entry Stamp.
+            </p>
+            <p class="lead text-center text-white">
+              Once you have your Visa you'll be escorted to retrieve your
+              luggage and assisted through Customs. Your loved one will be
+              waiting for you right outside of the Security Doors.
+            </p>
+            <ol class="list-group list-group-numbered">
+              <li class="list-group-item">VOA 750 usd if paid in full</li>
+              <li class="list-group-item">
+                If you're making a security deposit of $100*. <br />
+                Then you can choose to divide the balance by 2 or 3 payments.
+                Must be paid in full before 15days of your flight.
+              </li>
+            </ol>
+          </div>
+
+          <div class="row" id="warning-box">
+            <p class="text-warning lead text-center">
+              *Security Deposit is non-refundable. Any remaining balance will be
+              given as credit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- cart -->
+
+    <div class="container text-center">
+      <div class="row align-items-center">
+        <div class="card col-md-4 cart shadow-lg rounded">
+          <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-primary">Your cart</span>
+          </h4>
+          <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">VOA</h6>
+              </div>
+              <span class="text-muted">$750</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Transportation</h6>
+              </div>
+              <span class="text-muted" id="transport-span">$0</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">VAT/TAX</h6>
+              </div>
+              <span class="text-muted">$15</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <span>Subtotal (USD):</span>
+              <strong id="subtotal-strong">$765</strong>
+            </li>
+            <li class="list-group-item d-flex justify-content-between bg-light">
+              <div class="text-success">
+                <h6 class="my-0">Discount:</h6>
+              </div>
+              <span class="text-success">−$75</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <span>Total (USD):</span>
+              <strong id="total-strong">$690</strong>
+            </li>
+          </ul>
+          <form class="card p-2">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Discount code"
+              />
+              <button type="submit" class="btn btn-secondary">Redeem</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer class="container text-center">
+      <p id="copyright">Copyright Tribal Gateway &COPY; 2023</p>
+    </footer>
+
+    <!--Linking Bootstrap Javascript-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!--Local JS file-->
+    <script src="../js/voa.js"></script>
+  </body>
+</html>

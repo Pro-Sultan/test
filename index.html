@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tribal Gateway</title>
+
+    <!--Bootstrap library-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+
+   
+
+    <!-- Linking local css style file -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!--favicon-->
+    <link rel="shortcut icon" href="/images/tribal.png" type="image/x-icon" />
+
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/421d6e9a59.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="header-content container-fluid">
+      <video playsinline autoplay muted loop id="video">
+        <source src="video\background.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <header>
+        <nav class="navbar navbar-expand-sm fixed-top">
+          <div class="container-fluid">
+            <a style="font-weight: bolder; font-family: Verdana, Geneva, Tahoma, sans-serif;" class="navbar-brand" href="#">TRIBAL GATEWAY</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarCollapse"
+              aria-controls="navbarCollapse"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav me-auto ms-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Services</a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="./pages/gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Events</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./pages/login3.html">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./pages/register3.html">Signup</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <!--container for the top image, welcome text, and triangle image-->
+
+      <div class="container-fluid text-center" id="first_container">
+        <h2 id="welcome-text">WELCOME</h2>
+        <img class="tribal-image" src="./images/tribal.png" alt="logo" />
+        <hr class="top-hr"/>
+        <img src="./images/triangle.png" alt="triangles" class="triangle-img" />
+      </div>
+    </div>
+
+    <!--Middle container for text-->
+
+    <div class="container-fluid middle-container">
+      <div class="row">
+        <div class="col-md-5 tribal-box text-center">
+          <h1>TRIBAL:</h1>
+          <p id="tribal-pronounciation">/'^lbl/ noun</p>
+          <p class="meaning">- Member of a Community</p>
+          <p class="meaning">- a means of achieving a state or condition.</p>
+        </div>
+
+        <div class="col-md-7 gateway-box text-center">
+          <h1>GATEWAY:</h1>
+          <p id="gateway-pronounciation">/'geltwel/ noun</p>
+          <p>
+            - a place regarded as giving access or entrance to another place.
+          </p>
+          <p>- a means of achieving a state or condition.</p>
+        </div>
+      </div>
+
+      <div class="row mission-box">
+        <div class="col-md-12">
+          <h1 class="mission-text">OUR MISSION STATEMENT</h1>
+        </div>
+      </div>
+
+      <div class="row mission-img-box">
+        <div class="col-md-12">
+          <img
+            src="images/mission_holder_1.jpg"
+            class="mx-auto d-block mission-img-top"
+          />
+          <h3 class="mission-statement">
+            To educate, encourage, and empower a healthy, happy reunification on
+            the Africa Continent
+          </h3>
+          <img
+            src="images/mission_holder_2.jpg"
+            class="mx-auto d-block mission-img-bottom"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- page divider -->
+    <div class="divider"></div>
+
+    <div class="container-fluid prize-container">
+      <div class="row prize-img-class">
+        <div class="col-md-7 py-5">
+          <div
+            id="prizeCarousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+          <button class="carousel-control-prev" type="button" data-bs-target="#prizeCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next"  type="button" data-bs-target="#prizeCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="./images/f1.jpg"
+                  class="d-block picture-slide"
+                  alt="..."
+                />
+              </div>
+
+              <div class="carousel-item">
+                <img
+                  src="./images/f2.jpg"
+                  class="d-block picture-slide"
+                  alt="..."
+                />
+              </div>
+            
+              <div class="carousel-item">
+                <img
+                  src="./images/f3.jpg"
+                  class="d-block picture-slide"
+                  alt="..."
+                />
+              </div>
+          
+              <div class="carousel-item">
+                <img
+                  src="./images/f7.jpg"
+                  class="d-block picture-slide"
+                  alt="..."
+                />
+              </div>
+
+              <div class="carousel-item">
+                <img
+                  src="./images/f9.jpg"
+                  class="d-block picture-slide"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./images/f10.jpg"
+                  class="d-block picture-slide"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./images/f11.jpg"
+                  class="d-block picture-slide"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./images/f12.jpg"
+                  class="d-block picture-slide"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./images/f13.jpg"
+                  class="d-block picture-slide"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./images/f14.jpg"
+                  class="d-block picture-slide"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./images/f15.jpg"
+                  class="d-block picture-slide"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./images/f16.jpg"
+                  class="d-block picture-slide"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 py-5 prize-box">
+          <h1 class="pb-3">
+            If you find a picture that features you on our homepage, take a
+            screenshot of it to win a prize.
+          </h1>
+          <p>
+            Once you find your picture; take a screenshoot and send it to
+            <a
+              href="https:/www.gmail.com"
+              class="text-decoration-none text-primary fw-bold"
+              >screenwinner@tribalgateway.com</a
+            >
+            to claim you price.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- page divider -->
+    <div class="divider"></div>
+
+    <!-- Visiting text -->
+
+    <div class="container visiting-div">
+      <h1 class="visiting-text text-center text-light">
+        Are you Visiting or Relocating?
+      </h1>
+      <h2 class="visiting-text2 text-center">
+        We offer several services to help make your transition <br />smooth &
+        enjoyable
+      </h2>
+    </div>
+
+    <!-- Countries Gallery -->
+
+    <div class="container country-gallery">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <!-- Ghana -->
+        <div class="col">
+          <div class="card shadow-sm image-container">
+            <button
+              type="button"
+              class="btn"
+              data-bs-toggle="modal"
+              data-bs-target="#GhanaModal"
+            >
+              <img
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="250"
+                src="./images/GHANA 1.png"
+                alt="Ghana"
+              />
+            </button>
+          </div>
+        </div>
+        <!-- Ghana Modal -->
+        <div
+          class="modal fade"
+          id="GhanaModal"
+          tabindex="-1"
+          aria-labelledby="GhanaModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content ghana-modal">
+              <div class="modal-header">
+                <h1
+                  class="modal-title fs-4 text-center fw-bold"
+                  id="GhanaModalLabel"
+                >
+                  TRIBAL GATEWAY
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p class="text-center">
+                  <a class="btn btn-secondary"> Coming Soon </a>
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nigeria -->
+        <div class="col">
+          <div class="card shadow-sm image-container">
+            <button
+              type="button"
+              class="btn"
+              data-bs-toggle="modal"
+              data-bs-target="#NigeriaModal"
+            >
+              <img
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="250"
+                src="./images/NIGERIA 1.png"
+                alt="Nigeria"
+              />
+            </button>
+          </div>
+        </div>
+        <!-- Nigeria Modal -->
+        <div
+          class="modal fade"
+          id="NigeriaModal"
+          tabindex="-1"
+          aria-labelledby="NigeriaModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content nigeria-modal">
+              <div class="modal-header">
+                <h1
+                  class="modal-title fs-4 text-center fw-bold"
+                  id="NigeriaModalLabel"
+                >
+                  TRIBAL GATEWAY
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+               
+                <p class="text-center">
+                  <a
+                    href="./pages/airport-concierge.html"
+                    class="btn btn-primary shadow-lg"
+                  >
+                    Airport Concierge Services
+                  </a>
+                </p>
+                <p class="text-center">
+                  <a href="./pages/visa.html" class="btn btn-primary shadow-lg">
+                    Visa Services
+                  </a>
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Rwanda -->
+        <div class="col">
+          <div class="card shadow-sm image-container">
+            <button
+              type="button"
+              class="btn"
+              data-bs-toggle="modal"
+              data-bs-target="#RwandaModal"
+            >
+              <img
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="250"
+                src="./images/RWANDA 1.png"
+                alt="Rwanda"
+              />
+            </button>
+          </div>
+        </div>
+        <!-- Rwanda Modal -->
+        <div
+          class="modal fade"
+          id="RwandaModal"
+          tabindex="-1"
+          aria-labelledby="RwandaModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content rwanda-modal">
+              <div class="modal-header">
+                <h1
+                  class="modal-title fs-4 text-center fw-bold"
+                  id="RwandaModalLabel"
+                >
+                  TRIBAL GATEWAY
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p class="text-center">
+                  <a class="btn btn-secondary"> Coming Soon </a>
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- AFFILIATED COMPANIES -->
+<section class="affliate">
+    <h1 id="testimonial-text" style="margin-bottom: 30px; font-size: 2.5rem;">Companies who are in contract with TGW</h1>
+    <section class="slider">
+      <div class="slider">
+          <div class="slide-track">
+              <div class="slide">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+              </div>
+              <div class="slide">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+              </div>
+              <div class="slide">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+              </div>
+              <div class="slide">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+              </div>
+              <div class="slide">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+              </div>
+              <div class="slide">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+              </div>
+              <div class="slide">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+              </div>
+              <div class="slide">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+              </div>
+              <div class="slide">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+              </div>
+              <div class="slide">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+              </div>
+              <div class="slide">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+              </div>
+              <div class="slide">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+              </div>
+              <div class="slide">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+              </div>
+              <div class="slide">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+              </div>
+              <div class="slide">
+                  <img src="data:image/png;base64,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" height="100" width="250" alt="" />
+              </div>
+              <div class="slide">
+                  <img src="data:image/png;base64,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" height="100" width="250" alt="" />
+              </div>
+          </div>
+      </div>
+  </section>
+</section>
+    <!-- Testimonials -->
+
+    <h1 id="testimonial-text">WHAT OUR CLIENTS ARE SAYING</h1>
+
+
+    <div class="container-fluid testimonial-content" >
+      <div style="margin-bottom: 70px; background-color: rgba(0, 0, 0, 0.836); height: 400px; margin-top: 70px;">
+      <div  id="testimonial-carousel" class="container carousel slide" style="padding-right: 20px; padding-left: 30px;" data-bs-ride="carousel">
+       
+        <div class="carousel-inner">
+         
+          <div class="carousel-item  active" data-bs-interval="20000">
+            <div class="card h-100 bg-transparent card-border">
+              <div class="card-body  bg-transparent">
+                <div class="d-flex mb-2 ">
+                  <img
+                    src="./images/dominic.jpg"
+                    alt=""
+                    class="rounded-circle mr-2 border border-danger border-5"
+                  />
+                  
+                  <h5 class="card-title mt-1">
+                    <span class="testifier border border-danger">Domonique O.</span>
+                    <span style="color: red; padding: 5px; margin-top: 4px; font-size: 16px; text-align: start; background-color: black;"><br>Service Rendered:<span style="color: aquamarine;"> Escort Services</span></span>
+                    <span style="color: red; padding: 5px; margin-top: 4px; font-size: 16px; text-align: start; background-color: black;"><br>Date:<span style="color: aquamarine;"> March, 2023</span></span>
+                    <span style="color: red; padding: 5px; margin-top: 4px; font-size: 16px; text-align: start; background-color: black;"><br>Star Rating:
+                      <span style="color: aquamarine;"> 
+                        
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                        
+                      </span>
+                    </span>
+                  </h5>
+                  
+                 
+                </div>
+                
+               
+                <p class="card-text text-center border border-danger">
+                  The service overall was very convenient, easy and quick.
+
+                  Before departing, I had to submit pictures of myself and my luggage. 
+                  This was so the Tribal Gateway escort would be able to identify me. 
+                  Upon arriving at my destination, I had to find my way through the airport, 
+                  but with the help of others, I made my way to the escort and was waiting for me. 
+                  After that, he took me through the immigration processing and right to my loved ones.
+
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="carousel-item" data-bs-interval="20000">
+            <div class="card h-100 bg-transparent card-border">
+              <div class="card-body  bg-transparent">
+                <div class="d-flex mb-2 ">
+                  <img
+                    src="./images/erica_escort.jpeg"
+                    alt=""
+                    class="rounded-circle mr-2 border border-danger border-5"
+                  />
+                  
+                  <h5 class="card-title mt-1">
+                    <span class="testifier border border-danger">Erica C.</span>
+                    <span style="color: red; padding: 5px; margin-top: 4px; font-size: 16px; text-align: start; background-color: black;"><br>Service Rendered:<span style="color: aquamarine;">  Airport Escort, Visa On Arrival (VOA)</span></span>
+                    <span style="color: red; padding: 5px; margin-top: 4px; font-size: 16px; text-align: start; background-color: black;"><br>Date:<span style="color: aquamarine;"> May, 2023 | Jan, 2023</span></span>
+                    <span style="color: red; padding: 5px; margin-top: 4px; font-size: 16px; text-align: start; background-color: black;"><br>Star Rating:
+                      <span style="color: aquamarine;"> 
+                        
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star "></span>
+                        
+                      </span>
+                    </span>
+                  </h5>
+                  
+                 
+                </div>
+                
+               
+                <p class="card-text text-center border border-danger">
+                  I definitely would recommend 
+                  " My experience with Tribal Ggateway was excellent! 
+                  I loved how professional everything was. The guests loved the venue and the food. 
+                  One guest even told us that he would like a reception similar 
+                  to ours when he gets married. Thanks so much for making our 
+                  reception one to remember ☺️"
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="carousel-item " data-bs-interval="20000">
+            <div class="card h-100 bg-transparent card-border">
+              <div class="card-body  bg-transparent">
+                <div class="d-flex mb-2 ">
+                  <img
+                    src="./images/wedding_teisha.jpeg"
+                    alt=""
+                    class="rounded-circle mr-2 border border-danger border-5"
+                  />
+                  
+                  <h5 class="card-title mt-1">
+                    <span class="testifier border border-danger">Tateisha P.</span>
+                    <span style="color: red; padding: 5px; margin-top: 4px; font-size: 16px; text-align: start; background-color: black;"><br>Service Rendered:<span style="color: aquamarine;"> Wedding Reception</span></span>
+                    <span style="color: red; padding: 5px; margin-top: 4px; font-size: 16px; text-align: start; background-color: black;"><br>Date:<span style="color: aquamarine;"> March, 2022</span></span>
+                    <span style="color: red; padding: 5px; margin-top: 4px; font-size: 16px; text-align: start; background-color: black;"><br>Star Rating:
+                      <span style="color: aquamarine;"> 
+                        
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                        
+                      </span>
+                    </span>
+                  </h5>
+                  
+                 
+                </div>
+                
+               
+                <p class="card-text text-center border border-danger">
+                  I definitely would recommend 
+                  " My experience with Tribal Ggateway was excellent! 
+                  I loved how professional everything was. The guests loved the venue and the food. 
+                  One guest even told us that he would like a reception similar 
+                  to ours when he gets married. Thanks so much for making our 
+                  reception one to remember ☺️"
+                </p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+        <button class="carousel-control-prev" style="width: 45px; background-color: rgba(0, 0, 0, 0.493);" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" style="width: 45px; background-color: rgba(0, 0, 0, 0.541);" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      
+    </div>
+  </div>
+      
+    
+    
+    <!-- footer -->
+
+    <footer class="last">
+
+      <h2>Tribal Gateway</h2>
+  
+      <ul>
+  
+        <li><a href="">Home</a></li>
+
+        <li><a href="">Services</a></li>
+  
+        <li><a href="">Contact Us</a></li>
+  
+        <li><a href="">Login</a></li>
+  
+        <li><a href="">Sign Up</a></li>
+  
+      </ul>
+  
+      <div class="links">
+  
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+
+        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+  
+  
+      </div>
+  
+      
+  
+    </footer>
+
+    
+    <footer class="container-fluid text-center bg-dark">
+      <p id="copyright">Copyright Tribal Gateway &COPY; 2023</p>
+    </footer>
+    <!--Linking Bootstrap Javascript-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!--Local Javascript file-->
+    <script type="text/javascript" src="main.js"></script>
+    <script src="https://kit.fontawesome.com/b13eb6739b.js" crossorigin="anonymous"></script>
+  </body>
+</html>
