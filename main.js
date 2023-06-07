@@ -18,3 +18,19 @@ sr.reveal(".sr", {
   opacity: 0, // initial opacity of the element
   cleanup: true, // remove styles and animation data after animation completes
 });
+
+
+const signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('signIn');
+const container = document.getElementById('container');
+
+signUpButton.addEventListener('click', () => {
+	container.classList.add("right-panel-active");
+});
+
+signInButton.addEventListener('click', () => {
+	container.classList.remove("right-panel-active");
+});
+
+
+
